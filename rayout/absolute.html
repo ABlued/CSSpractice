@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+
+    <title>Page Title</title>
+    <style>
+        #parent, #other, #grand{
+            border: 5px solid tomato;
+        }
+        #me{
+            background-color: black;
+            color: white;
+            position: absolute;/*position : absolute이면 위치기준이 부모가 아닌 html 엘리멘트가 된다. 이때 offset지정해줘야 제대로 사용할수 있으며 자신의 content만큼의 크기를 갖게 된다.*/
+            left:0px;     
+            top:0px;
+            width:100px;
+            /*absolute의 크기를 지정하고 싶으면 width, height를 지정해야한다.*/
+        }
+        #parent{
+            /* position: relative; */
+        }
+        #grand{
+            position: relative;     /* absolute는 부모태그중에 static은 무시하고 relative속성을 가진 태그 기준으로 위치가 선정된다.*/
+        }
+    </style>
+</head>
+<body>
+    <div id="other">other</div>
+    <div id="grand"> grand
+        <div id="parent">parent
+            <div id="me">me</div>
+        </div>
+    </div>
+</body>
+</html>
+<!--CSS 수업 - 포지션 2 : absolute : https://www.youtube.com/watch?v=LuV-dll7vjs&list=PLuHgQVnccGMDaVaBmkX0qfB45R_bYrV62&index=32-->

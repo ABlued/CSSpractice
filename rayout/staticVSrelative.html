@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <style>
+        html{
+            border: 1px red solid;
+        }
+        div{
+            border: 5px red solid;
+            margin:10px;
+        }
+        #me{
+            position: relative;
+            left:100px;
+            top:100px;
+        }
+        /*position : static 은 offset값(left, right, top, bottom을 무시한다*/
+    </style>
+</head>
+<body>
+    <div id="other">other</div>
+    <div id="parent">parent
+        <div id="me">me</div>
+    </div>
+</body>
+</html>
+<!--CSS 수업 - 포지션 1 : relative VS static : https://www.youtube.com/watch?v=eLF6IB1QMQE&list=PLuHgQVnccGMDaVaBmkX0qfB45R_bYrV62&index=31&t=316s -->
