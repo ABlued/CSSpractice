@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+.test{
+    position: relative;
+    background-color: tomato;
+    margin: 10px;
+    height: 200px;
+    width:600px;
+    display: inline-block;
+    text-align: center;
+
+}
+
