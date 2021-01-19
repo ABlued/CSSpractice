@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <style>
+        body{
+            /* display: flex; */
+            height: 1000px;
+        }
+        .container{
+            display: flex;
+            height: 300px;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+        .item{
+            background-color: tomato;
+            margin:10px;
+            width: 40px;
+            height: 40px;
+            color:white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" style="align-self: flex-end;">1</div>         <!-- align-self는 특정한 요소만 수평조절할 수 있게 해준다. --> 
+        <div class="item" style="flex-grow: 2;">2</div>                 <!-- flex-grow는 특정한 요소만 공간을 더 차지하게 만들어준다. 이 반대는 flex-shrink이다--> 
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item" style="order: -1;">4</div>                    <!-- 요소들마다 순서를 다르게 만들어주는 속성이다.--> 
+        <div class="item">5</div>
+    </div>    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>    
+</body>
+</html>
+
+<!-- 링크 : https://opentutorials.org/module/2367/13526 -->

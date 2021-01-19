@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            /* padding: 100px; */
+            flex-wrap: nowrap;        /* wrap이면 item의 크기가 container보다 크다면 줄바꿈이 된다. 디폴트는 nowrap*/  
+        }
+        .item{
+            background-color: tomato;
+            padding: 5px;
+            color:white;
+            border:1px solid white;
+        }
+        .test{
+            display: flex;
+            order:-1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item" class ="test">36</div>
+        <div class="item">5</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
+
+<!-- CSS 수업 - flex 5 : 기타 속성 들 : https://www.youtube.com/watch?v=bTVaV1O_13Y&list=PLuHgQVnccGMDaVaBmkX0qfB45R_bYrV62&index=38 -->
+<!-- https://opentutorials.org/module/2367/13526 -->
