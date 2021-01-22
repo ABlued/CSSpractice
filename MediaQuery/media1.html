@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!--모바일에서도 화면 최적화되게 하는 코드-->
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <style>
+        @media (max-width:600px){       /*500~600px일때 초록색*/
+            body{
+                background-color: green;
+            }
+        }
+        @media (max-width:500px){       /*500이하일때는 빨간색*/
+            body{ 
+                background-color: red;
+            }
+        }           /*만약 이게 green보다 더 앞에 나와있으면 캐스케이팅에 의해 전혀 다른 결과가 나온다*/
+        @media (min-width:601px){
+            body{
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- CSS 수업 : mediaquery 1 - 기본 : https://www.youtube.com/watch?v=y3Zx-nVH25s&list=PLuHgQVnccGMDaVaBmkX0qfB45R_bYrV62&index=40&t=604s -->
