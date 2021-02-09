@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        a{
+            font-size: 3rem;
+            display: inline-block;
+            transition-property: all;       /*a태그에서 모든것에 변화가 일어났을때 transition이 발동된다*/
+            transition-duration: 1s;        /*그 변화가 1초동안 진행된다.*/
+            /*transition:all 1s;로도 쓸 수 있다.*/
+        }
+        a:hover{       /*클릭했을때의 변화*/
+            transform: translate(0px, -10px);      /*inline-block일때만 움직인다*/
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">click</a>
+</body>
+</html>
+
+<!-- CSS 수업 - transition 1 : 소개https://www.youtube.com/watch?v=_vIwNoTIr7s&list=PLuHgQVnccGMDaVaBmkX0qfB45R_bYrV62&index=51-->
