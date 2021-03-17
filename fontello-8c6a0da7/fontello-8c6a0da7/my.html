@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="css/fontello.css">     <!-- 폰텔로 아이콘을 사용하기 위한 css파일 -->
+    <link rel="stylesheet" href="css/animation.css">     <!-- 폰텔로 움직이는 아이콘을 사용하기 위한 css파일 -->
+    
+    <style>
+        body{
+            font-family: "fontello";
+            /*폰텔로 아이콘을 사용하기 위한 코드*/
+            color:blue;
+            /* 이렇게 색상을 지정하면 폰텔로 아이콘도 적용된다. */
+            font-size: 50px;
+            /* 이렇게 크기를 지정하면 폰텔로 아이콘도 적용된다. */
+        }
+        #test:before{      /*test 선택자 앞에*/
+            content: "s";
+            color:red;
+        }
+        #test:after{      /*test 선택자 뒤에*/
+            content: "e";
+        }
+    </style>
+
+</head>
+<body>
+    &#xe800; <!--    사진기 아이콘의 코드     -->
+    <i class="icon-camera-alt"></i> <!-- 사진기 아이콘의 이름을 이용해서 사용할려면 i태그를 이용해야한다. -->
+<!-- 폰텔로의 원리는 css/fontello.css 파일을 보자-->
+    <i class="icon-camera-alt animate-spin"></i> <!-- 이런식으로 클래스에 animate-spin 클래스를 붙히면 아이콘이 움직인다. 더많은 동작은 animation.css에 명시되어있다. -->
+</body>
+</html>
+
+<!-- 참조 - CSS 수업 - Fontello 3 : 원리 : https://www.youtube.com/watch?v=LCqoUZzlx-0 -->
