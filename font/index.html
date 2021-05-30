@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <style>
+        #px{font-size: 20px;}       /* 사용자가 크기를 바꿀 수 없음(고정적)*/
+        #em{font-size: 1em;}
+        #rem{font-size: 1rem;}       /*사용자가 크기를 바꿀 수 있음(가변적)*/
+        p{
+            text-align: justify;    /* 왼쪽과 오른쪽의 공간이 균등하게 분배되어 정렬된다.*/
+            line-height: 1.4;       /* 줄과 줄 사이의 거리*/
+        }
+        #family{
+            font-size: 5rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #type1{
+            font-size: 5rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            line-height: 2;
+        }
+        #type2{
+            font: bold 5rem/2 arial, Helvetica, sans-serif;/* type2에서 지정한 속성과 똑같다*/
+        }
+    </style>
+</head>
+<body>
+    <div id="px">PX</div>
+    <div id="em">EM</div>
+    <div id="rem">REM</div>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    <span id="family">글꼴 정하기</span>
+    <p id="type1">Hello World</p>
+    <p id="type2">Hello World</p>
+</body>
+</html>
+
+<!-- px, em, rem의 차이 : https://medium.com/watcha/watcha-%EA%B0%9C%EB%B0%9C-%EC%A7%80%EC%8B%9D-px-em-rem-f569c6e76e66 -->
