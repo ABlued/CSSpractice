@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <style>
+        #box4
+        {
+            width: 500px;
+            height: 200px;
+            background-color: gray;
+        }
+        #position_absolute_parent
+        {
+            /* position: relative; */
+            width: 500px;
+            /* height: 500px; */
+            background-color: yellow;
+        }
+        #position_absolute_child
+        {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            /*마진 병합 현상이 일어나지 않습니다*/
+            /* top:100px; */
+            /* margin-top: 100px; */
+        }
+
+    </style>
+</head>
+<body>
+    <div id ="box4"></div>
+    <div id ="position_absolute_parent">
+        <div id = "position_absolute_child"></div>
+    </div>
+    
+    
+        
+</body>
+</html></html>
