@@ -113,10 +113,30 @@
       border-radius: 0 10px 10px 0;
     }
   </style>
+  <!-- 콘텐츠 -->
   <style>
+    #content {
+      width: 960px;
+      margin: 0 auto;
+    }
 
+    #content>#main_section {
+      width: 750px;
+      float: left;
+    }
+
+    #content>#main_aside {
+      width: 200px;
+      float: right;
+    }
   </style>
-  <style></style>
+  <style>
+    #main_section>article.main_article {
+      margin-bottom: 10px;
+      padding: 20px;
+      border: 1px solid black;
+    }
+  </style>
   <style></style>
   <style></style>
   <style></style>
@@ -151,6 +171,39 @@
       </ul>
     </nav>
   </header>
+  <div id="content">
+    <section id="main_section">
+      <!-- <h1>Main Section</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quaerat facere quis, iure ducimus sit! Repellat
+        neque consequatur accusantium minima animi obcaecati labore esse. Excepturi porro quidem eaque libero adipisci.
+      </p> -->
+      <article class="main_article">
+        <h1>Main Article</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quaerat facere quis, iure ducimus sit! Repellat
+          neque consequatur accusantium minima animi obcaecati labore esse. Excepturi porro quidem eaque libero
+          adipisci.
+      </article>
+      <article class="main_article">
+        <h1>Main Article</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quaerat facere quis, iure ducimus sit! Repellat
+          neque consequatur accusantium minima animi obcaecati labore esse. Excepturi porro quidem eaque libero
+          adipisci.
+      </article>
+      <article class="main_article">
+        <h1>Main Article</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quaerat facere quis, iure ducimus sit! Repellat
+          neque consequatur accusantium minima animi obcaecati labore esse. Excepturi porro quidem eaque libero
+          adipisci.
+      </article>
+    </section>
+    <aside id="main_aside">
+      <h1>Main Aside</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quaerat facere quis, iure ducimus sit! Repellat
+        neque consequatur accusantium minima animi obcaecati labore esse. Excepturi porro quidem eaque libero adipisci.
+      </p>
+
+    </aside>
+  </div>
 </body>
 
 </html>
