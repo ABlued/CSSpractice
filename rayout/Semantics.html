@@ -196,7 +196,39 @@
 
     }
   </style>
-  <style></style>
+  <!-- 목록 -->
+  <style>
+    .item {
+      overflow: hidden;
+      padding: 10px;
+      border: 1px solid black;
+      border-top: none;
+    }
+
+    .thumbnail {
+      float: left;
+    }
+
+    .description {
+      float: left;
+      margin-left: 10px;
+    }
+
+    .description>strong {
+      display: block;
+      width: 120px;
+      /* 글자를 생략할 때 항상 몰려다니는 삼총사입니다. */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .imgBox {
+      width: 50px;
+      height: 50px;
+      background-color: aqua;
+    }
+  </style>
   <style></style>
   <style></style>
 </head>
@@ -259,18 +291,82 @@
       </section>
       <div class="tab_item">
         <ul>
-          <li><a href="#">HTML5 Canvas</a></li>
-          <li><a href="#">HTML5 Audio</a></li>
-          <li><a href="#">HTML5 Video</a></li>
-          <li><a href="#">HTML5 Semantic Web</a></li>
+          <li class="item"><a href="#">
+              <div class="thumbnail">
+                <div class="imgBox"></div>
+              </div>
+              <div class="description">
+                <strong> HTML5 Canvas</strong>
+                <p>2019-03-15</p>
+              </div>
+            </a></li>
+          <li class="item"><a href="#">
+              <div class="thumbnail">
+                <div class="imgBox"></div>
+              </div>
+              <div class="description">
+                <strong> HTML5 Audio</strong>
+                <p>2019-03-15</p>
+              </div>
+            </a></li>
+          <li class="item"><a href="#">
+              <div class="thumbnail">
+                <div class="imgBox"></div>
+              </div>
+              <div class="description">
+                <strong> HTML5 Video</strong>
+                <p>2019-03-15</p>
+              </div>
+            </a></li>
+          <li class="item"><a href="#">
+              <div class="thumbnail">
+                <div class="imgBox"></div>
+              </div>
+              <div class="description">
+                <strong> HTML5 Semantic Web</strong>
+                <p>2019-03-15</p>
+              </div>
+            </a></li>
         </ul>
       </div>
       <div class="tab_item">
         <ul>
-          <li><a href="#">CSS3 Trnaslaton</a></li>
-          <li><a href="#">CSS3 Animation</a></li>
-          <li><a href="#">CSS3 Border</a></li>
-          <li><a href="#">CSS3 Box</a></li>
+          <li class="item"><a href="#">
+              <div class="thumbnail">
+                <div class="imgBox"></div>
+              </div>
+              <div class="description">
+                <strong> CSS3 Trnaslaton</strong>
+                <p>2019-03-15</p>
+              </div>
+            </a></li>
+          <li class="item"><a href="#">
+              <div class="thumbnail">
+                <div class="imgBox"></div>
+              </div>
+              <div class="description">
+                <strong> CSS3 Trnaslaton</strong>
+                <p>2019-03-15</p>
+              </div>
+            </a></li>
+          <li class="item"><a href="#">
+              <div class="thumbnail">
+                <div class="imgBox"></div>
+              </div>
+              <div class="description">
+                <strong> CSS3 Border</strong>
+                <p>2019-03-15</p>
+              </div>
+            </a></li>
+          <li class="item"><a href="#">
+              <div class="thumbnail">
+                <div class="imgBox"></div>
+              </div>
+              <div class="description">
+                <strong> CSS3 Box</strong>
+                <p>2019-03-15</p>
+              </div>
+            </a></li>
         </ul>
       </div>
 
